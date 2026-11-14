@@ -1,0 +1,3 @@
+# Companies that said in writing they do not sponsor visas. One per line: Company  # YYYY-MM-DD: evidence
+# Used only when modules.h1b is on. scripts/screen.py and the apply-batch filter drop these;
+# /review-emails adds a company the moment a rejection email says so.

@@ -1,0 +1,239 @@
+{
+  "_comment": "Every personal setting the kit uses. /setup in Claude writes config/profile.json from this shape; edit it any time and run scripts/doctor.py. Field notes are in config/README.md. targets.employment_types: any of full_time, part_time, contract_w2, contract_c2c, contract_1099; picking a contract type turns on the contract search (modules/c2c).",
+  "schema_version": 1,
+  "identity": {
+    "full_name": "",
+    "preferred_name": "",
+    "pronouns": "",
+    "name_pronunciation": "",
+    "email": "",
+    "phone": "",
+    "street_address": "",
+    "city": "",
+    "state": "",
+    "zip": "",
+    "country": "United States",
+    "linkedin": "",
+    "github": "",
+    "website": ""
+  },
+  "current_role": {
+    "company": "",
+    "title": "",
+    "years_experience": 0,
+    "level": "senior"
+  },
+  "resumes": [
+    {
+      "label": "main",
+      "path": "resumes/base/resume.pdf",
+      "use_for": "default for every role"
+    }
+  ],
+  "targets": {
+    "titles": [],
+    "employment_types": [
+      "full_time"
+    ],
+    "title_include_regex": "",
+    "title_exclude_regex": "",
+    "max_years_required": 10,
+    "skip_levels_regex": "\\b(staff|principal|distinguished)\\b|engineering manager|head of|director|\\bvp\\b|chief",
+    "primary_stack_regex": "",
+    "other_stack_knockouts": [
+      {
+        "regex": "\\.net\\b|\\bc#",
+        "label": ".NET/C#"
+      }
+    ],
+    "domain_skips": [
+      {
+        "regex": "security clearance|ts/sci|top secret",
+        "label": "clearance"
+      }
+    ],
+    "scope_regex": "",
+    "domain_prefer_regex": "",
+    "skills": {
+      "core": [],
+      "ai": []
+    }
+  },
+  "locations": {
+    "remote_us_ok": true,
+    "onsite_hybrid_areas": [],
+    "match_regex": "",
+    "relocation_anywhere_us": false,
+    "location_answer": "",
+    "timezone": "America/New_York"
+  },
+  "work_authorization": {
+    "authorized_in_us": true,
+    "needs_sponsorship": false,
+    "visa_status": "",
+    "citizenship": "",
+    "any_employer_answer": "Yes",
+    "security_clearance": ""
+  },
+  "pay": {
+    "currency": "USD",
+    "floor": 0,
+    "ask_when_no_range": 0,
+    "position_in_posted_range": 0.75,
+    "round_to": 5000,
+    "hourly_floor": 0,
+    "part_time_hours_per_week": 0
+  },
+  "logistics": {
+    "notice_period": "2 weeks",
+    "travel_max_percent": 25,
+    "agencies_ok": true,
+    "how_did_you_hear_default": "LinkedIn",
+    "recording_consent": "Yes",
+    "non_compete": ""
+  },
+  "screening": {
+    "age_18_plus": "Yes",
+    "background_check_ok": "Yes",
+    "drug_test_ok": "Yes",
+    "drivers_license": "Yes",
+    "reliable_transportation": "Yes",
+    "hybrid_days_max": 3,
+    "weekends_ok": "No",
+    "overtime_ok": "Yes",
+    "open_to_contract_to_hire": "Yes",
+    "previously_employed_answer": "No (verify per company)",
+    "relatives_at_company": "No (verify per company)",
+    "accommodations": "ask",
+    "remote_setup": "Yes",
+    "timezone_overlap": "",
+    "current_salary_answer": "Prefer not to say",
+    "compensation_notes": "",
+    "cover_letter": "only_when_required",
+    "portfolio_url": "",
+    "writing_sample": "",
+    "references": "Available upon request",
+    "languages": [
+      {
+        "language": "English",
+        "level": ""
+      }
+    ],
+    "certifications": [],
+    "licenses": []
+  },
+  "education": [
+    {
+      "degree": "",
+      "field": "",
+      "school": "",
+      "year": ""
+    }
+  ],
+  "education_summary": {
+    "highest_level": "",
+    "student_status": "graduated",
+    "graduation_date": "",
+    "gpa": "",
+    "gpa_scale": "4.0",
+    "share_gpa": "only_when_required",
+    "honors": ""
+  },
+  "eeo": {
+    "gender": "Decline to self-identify",
+    "hispanic_latino": "Decline to self-identify",
+    "race": "Decline to self-identify",
+    "veteran": "Decline to self-identify",
+    "veteran_detail": [],
+    "military_spouse": "Decline to self-identify",
+    "disability": "Decline to self-identify",
+    "sexual_orientation": "Decline to self-identify",
+    "transgender": "Decline to self-identify"
+  },
+  "tracker": {
+    "sheet_id": "",
+    "tab": "Sheet1",
+    "gid": "0",
+    "chrome_profile_name": ""
+  },
+  "inbox": {
+    "gmail_address": ""
+  },
+  "search": {
+    "posting_window_days": 7,
+    "batch_size": 15,
+    "sources": [
+      "linkedin",
+      "handshake",
+      "indeed",
+      "ashby",
+      "greenhouse",
+      "lever"
+    ],
+    "extra_portals": [],
+    "curated_linkedin_lists": false,
+    "curated_sources": []
+  },
+  "modules": {
+    "h1b": false,
+    "resume_tailoring": true,
+    "record_keeping": true
+  },
+  "h1b": {
+    "min_known_sponsor_share": 0.7,
+    "max_none_per_batch": 3
+  },
+  "resume_build": {
+    "content_path": "profile/resume_content.json",
+    "pages": 2,
+    "exact_pages": true,
+    "engine": "latex",
+    "font": "Arial",
+    "chrome_path": "",
+    "tailoring_mode": "70/30",
+    "batch_size": 50,
+    "batch_days": 21,
+    "min_score": 70
+  },
+  "c2c": {
+    "remote_only": true,
+    "days": 30,
+    "max_years_asked": 12,
+    "queries": {
+      "dice": [],
+      "dice_keyword": [],
+      "linkedin": []
+    },
+    "title_include": [],
+    "title_exclude": [],
+    "min_score": 55,
+    "shortlist_min_score": 70,
+    "skip_clearance": true,
+    "firm_boards_file": "modules/c2c/scraper/firm_boards.json",
+    "resume_versions": {
+      "default": "main"
+    },
+    "followup_workdays": [
+      3,
+      5
+    ],
+    "outreach": {
+      "proof": {},
+      "openers": {},
+      "closing": ""
+    }
+  },
+  "followups": {
+    "quiet_days": 10,
+    "max_followups": 2,
+    "stale_days": 60,
+    "thankyou_days": 3,
+    "checkin_days": 7
+  },
+  "writing": {
+    "style_notes": "First person, plain text, concise and specific. No bold, headings or dashes in form fields."
+  },
+  "calibration": {
+    "role_types": []
+  }
+}

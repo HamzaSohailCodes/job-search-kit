@@ -1,0 +1,165 @@
+{
+  "_comment": "Resume engine data file (fake example). /setup writes profile/resume_content.json in this shape from the candidate's resume; every fact must also be in profile/master_cv.md. Text fields allow <b>, <i>, <a href> and <br>; write & as plain & or &amp;. Schema: resume/README.md.",
+  "schema_version": 1,
+
+  "header": {
+    "name": "Jane Doe",
+    "contact_lines": [
+      "Austin, TX · +1 555 0100 · jane.doe@example.com",
+      "linkedin.com/in/janedoe-example · github.com/janedoe-example"
+    ]
+  },
+
+  "section_titles": {
+    "summary": "Summary",
+    "skills": "Technical Skills",
+    "certifications": "Certifications",
+    "experience": "Professional Experience",
+    "projects": "Selected Projects",
+    "education": "Education"
+  },
+  "section_order": ["summary", "skills", "certifications", "experience", "projects", "education", "extras"],
+
+  "skills": [
+    {"id": "lang", "label": "Languages", "category": "languages", "items": ["TypeScript", "JavaScript", "Python", "SQL"]},
+    {"id": "front", "label": "Frontend", "category": "frontend", "items": ["React", "Next.js", "Redux Toolkit", "Tailwind CSS", "HTML5", "CSS3", "data visualization"]},
+    {"id": "back", "label": "Backend & APIs", "category": "backend", "items": ["Node.js", "Express.js", "FastAPI", "GraphQL", "REST APIs", "WebSockets", "OAuth 2.0", "RBAC"]},
+    {"id": "data", "label": "Databases & Messaging", "category": "data", "items": ["PostgreSQL", "Redis", "MongoDB", "Kafka"]},
+    {"id": "cloud", "label": "Cloud & DevOps", "category": "cloud", "items": ["AWS", "Docker", "GitHub Actions CI/CD", "Terraform", "Git"]},
+    {"id": "test", "label": "Testing & Delivery", "category": "testing", "items": ["Jest", "Playwright", "unit & integration testing", "code review", "Agile/Scrum"]},
+    {"id": "arch", "label": "Architecture", "category": "architecture", "items": ["System design", "microservices", "event-driven", "multi-tenant SaaS"]},
+    {"id": "ai", "label": "AI & LLM", "category": "ai", "items": ["OpenAI", "RAG", "embeddings", "prompt engineering", "evals"]}
+  ],
+
+  "certifications": [
+    {"title": "Certified Data Engineer – Associate · Example Cloud Academy", "when": "Issued Jan 2024", "meta": "Credential ID EXAMPLE-0000"}
+  ],
+
+  "jobs": [
+    {
+      "id": "acme",
+      "employer": "Acme Analytics",
+      "url": "https://acme.example.com",
+      "employer_note": "(Series B)",
+      "title": "Senior Software Engineer",
+      "location": "Austin, TX",
+      "dates": "Mar 2021 – Present",
+      "context": "Self-serve analytics platform for mid-market retailers",
+      "stack": "TypeScript, React, Node.js, PostgreSQL, Redis, AWS, Kafka",
+      "domains": ["analytics", "retail", "B2B SaaS"],
+      "bullets": [
+        {"id": "acme_dash", "text": "<b>Cut dashboard load time by 60%</b> by moving report queries from on-request SQL to pre-aggregated PostgreSQL tables refreshed from Kafka events."},
+        {"id": "acme_own", "text": "Own technical design and delivery of the reporting product used by 400+ retail customers, from discovery through launch, building React frontends and Node.js services on PostgreSQL."},
+        {"id": "acme_lead", "text": "Lead a team of 5 engineers through system design, code review and mentoring; introduced design docs and a weekly architecture review."},
+        {"id": "acme_ai", "text": "<b>Reduced support tickets by 30%</b> by shipping an in-product assistant that answers metric questions with RAG over the docs and the customer's own schema, with evals run on every release."},
+        {"id": "acme_tenant", "text": "Re-architected the API as multi-tenant SaaS with row-level security and RBAC, unblocking the first enterprise contracts."}
+      ]
+    },
+    {
+      "id": "globex",
+      "employer": "Globex Logistics",
+      "url": "",
+      "employer_note": "",
+      "title": "Software Engineer",
+      "location": "Dallas, TX",
+      "dates": "Jun 2018 – Feb 2021",
+      "context": "Freight tracking software for regional carriers",
+      "stack": "Python, FastAPI, React, PostgreSQL, Docker, AWS",
+      "domains": ["logistics", "operations"],
+      "bullets": [
+        {"id": "globex_track", "text": "Built a real-time shipment tracking service in Python and FastAPI that processes 2M GPS events a day and pushes updates to dispatchers over WebSockets."},
+        {"id": "globex_etl", "text": "<b>Saved dispatchers 10 hours a week</b> by replacing spreadsheet imports with a validated ETL pipeline and a React review screen."},
+        {"id": "globex_ci", "text": "Set up Docker builds and GitHub Actions CI/CD with Jest and Playwright tests, taking releases from monthly to weekly."}
+      ]
+    },
+    {
+      "id": "initech",
+      "employer": "Initech",
+      "url": "",
+      "employer_note": "",
+      "title": "Junior Developer",
+      "location": "Austin, TX",
+      "dates": "Jul 2017 – May 2018",
+      "context": "",
+      "stack": "",
+      "domains": ["internal tools"],
+      "bullets": [
+        {"id": "initech_tools", "text": "Built internal admin tools in Node.js and Express.js on MongoDB for the operations team."}
+      ]
+    }
+  ],
+
+  "projects": [
+    {"id": "metricsbot", "title": "MetricsBot | Open-source Slack bot · 2023", "bullets": [
+      "Built a Slack bot in TypeScript that answers plain-English questions about a PostgreSQL warehouse using OpenAI tool calling and a read-only SQL sandbox."
+    ]},
+    {"id": "tripplanner", "title": "Trip Planner | Weekend project · 2022", "bullets": [
+      "Built a Next.js trip planner with a Redis cache and a GraphQL API over public transit data."
+    ]}
+  ],
+
+  "education": [
+    {"degree": "Bachelor of Science in Computer Science · 2017", "school": "Example State University"}
+  ],
+
+  "extra_sections": [
+    {"title": "Community", "entries": [
+      {"title": "Example City JavaScript Meetup | Co-organizer", "when": "2019 – Present", "bullets": [
+        "Run a monthly meetup of 80+ developers; organized 30 talks."
+      ]}
+    ]}
+  ],
+
+  "default_version": "FullStack",
+  "versions": {
+    "FullStack": {
+      "headline": "Senior Full-Stack Software Engineer · TypeScript · React · Node.js · Python",
+      "headline_base": "Senior Full-Stack Software Engineer",
+      "summary": "Senior full-stack software engineer with 7 years of experience building data-heavy web products with TypeScript, React, Next.js, Node.js and Python (FastAPI) on PostgreSQL, Redis and AWS. Designs REST and GraphQL APIs, event-driven pipelines on Kafka and multi-tenant SaaS. Leads small teams through design and code review and ships LLM features (RAG, evals) in production.",
+      "skills": ["lang", "front", "back", "data", "cloud", "test", "arch", "ai"],
+      "jobs": {
+        "acme": ["acme_own", "acme_dash", "acme_tenant", "acme_ai", "acme_lead"],
+        "globex": ["globex_track", "globex_etl", "globex_ci"],
+        "initech": ["initech_tools"]
+      },
+      "projects_title": "Selected Projects",
+      "projects": ["metricsbot", "tripplanner"],
+      "match": ["full-stack", "React", "Next.js", "frontend", "TypeScript", "Node.js", "product engineering"],
+      "title_regex": "full[- ]?stack|product engineer|frontend"
+    },
+    "Backend": {
+      "headline": "Senior Backend Software Engineer · Node.js · Python · PostgreSQL · Kafka",
+      "headline_base": "Senior Backend Software Engineer",
+      "summary": "Senior backend software engineer with 7 years of experience designing APIs and data pipelines in Node.js, TypeScript and Python (FastAPI) on PostgreSQL, Redis and Kafka, deployed on AWS with Docker. Builds event-driven and multi-tenant SaaS systems, tunes slow queries and owns services from design to on-call. Leads small teams through design and code review.",
+      "skills": ["lang", "back", "data", "arch", "cloud", "test", "front", "ai"],
+      "jobs": {
+        "acme": ["acme_dash", "acme_tenant", "acme_own", "acme_lead", "acme_ai"],
+        "globex": ["globex_track", "globex_etl", "globex_ci"],
+        "initech": ["initech_tools"]
+      },
+      "projects_title": "Selected Projects",
+      "projects": ["metricsbot", "tripplanner"],
+      "match": ["backend", "distributed systems", "microservices", "Kafka", "event-driven", "PostgreSQL", "REST APIs", "GraphQL"],
+      "title_regex": "back[- ]?end|infra|platform"
+    },
+    "AI_Engineer": {
+      "headline": "Software Engineer, AI Products · LLM Features & RAG · TypeScript & Python",
+      "headline_base": "Software Engineer, AI Products",
+      "summary": "Software engineer with 7 years of production experience, including shipping LLM features end to end: RAG over customer data, OpenAI tool calling and evals on every release, built in TypeScript (Node.js, React) and Python (FastAPI). Shipped an in-product assistant that reduced support tickets by 30% at a Series B analytics company. Works across the stack on PostgreSQL, Redis and AWS.",
+      "skills": ["ai", "lang", "back", "front", "data", "cloud", "test", "arch"],
+      "jobs": {
+        "acme": ["acme_ai", "acme_own", "acme_dash", "acme_tenant", "acme_lead"],
+        "globex": ["globex_track", "globex_etl", "globex_ci"],
+        "initech": ["initech_tools"]
+      },
+      "projects_title": "Selected AI Projects",
+      "projects": ["metricsbot", "tripplanner"],
+      "match": ["LLMs", "AI agents", "RAG", "tool calling", "evals", "embeddings", "OpenAI", "prompt engineering"],
+      "title_regex": "\\bai\\b|\\bml\\b|llm|agent"
+    }
+  },
+
+  "keyword_aliases": {
+    "data visualization": "visuali[sz]|dashboards?"
+  }
+}

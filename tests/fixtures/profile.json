@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "full_name": "Jane Doe",
+    "preferred_name": "Jane",
+    "pronouns": "",
+    "name_pronunciation": "",
+    "email": "jane.doe@example.com",
+    "phone": "+1 555 0100",
+    "street_address": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78701",
+    "country": "United States",
+    "linkedin": "https://www.linkedin.com/in/janedoe-example",
+    "github": "https://github.com/janedoe-example",
+    "website": ""
+  },
+  "current_role": {
+    "company": "Acme Analytics",
+    "title": "Senior Software Engineer",
+    "years_experience": 7,
+    "level": "senior"
+  },
+  "resumes": [
+    {
+      "label": "main",
+      "path": "tests/fixtures/resumes/Jane_Doe_Resume.pdf",
+      "use_for": "software / full-stack roles"
+    }
+  ],
+  "targets": {
+    "titles": [
+      "Senior Software Engineer",
+      "Senior Full Stack Engineer",
+      "Product Engineer"
+    ],
+    "title_include_regex": "senior software engineer|full[- ]?stack|product engineer",
+    "title_exclude_regex": "\\bintern|junior|manager|director|staff|principal|ios|android|data scientist",
+    "max_years_required": 10,
+    "skip_levels_regex": "\\b(staff|principal|distinguished)\\b|engineering manager|head of|director|\\bvp\\b|chief",
+    "primary_stack_regex": "\\b(typescript|react|node\\.?js|python)\\b",
+    "other_stack_knockouts": [
+      {
+        "regex": "\\.net\\b|\\bc#",
+        "label": ".NET/C#"
+      }
+    ],
+    "domain_skips": [
+      {
+        "regex": "security clearance|ts/sci|top secret",
+        "label": "clearance"
+      }
+    ],
+    "scope_regex": "",
+    "domain_prefer_regex": "",
+    "skills": {
+      "core": [
+        "typescript",
+        "react",
+        "node.js",
+        "python",
+        "postgresql",
+        "aws"
+      ],
+      "ai": [
+        "llm",
+        "rag"
+      ]
+    },
+    "employment_types": [
+      "full_time",
+      "contract_c2c"
+    ]
+  },
+  "locations": {
+    "remote_us_ok": true,
+    "onsite_hybrid_areas": [
+      "Austin, TX",
+      "Dallas, TX"
+    ],
+    "match_regex": "austin|dallas|texas|\\btx\\b",
+    "relocation_anywhere_us": false,
+    "location_answer": "Austin, TX",
+    "timezone": "America/New_York"
+  },
+  "work_authorization": {
+    "authorized_in_us": true,
+    "needs_sponsorship": false,
+    "visa_status": "",
+    "citizenship": "United States",
+    "any_employer_answer": "Yes",
+    "security_clearance": ""
+  },
+  "pay": {
+    "currency": "USD",
+    "floor": 150000,
+    "ask_when_no_range": 180000,
+    "position_in_posted_range": 0.75,
+    "round_to": 5000,
+    "hourly_floor": 85
+  },
+  "logistics": {
+    "notice_period": "2 weeks",
+    "travel_max_percent": 25,
+    "agencies_ok": true,
+    "how_did_you_hear_default": "LinkedIn",
+    "recording_consent": "Yes",
+    "non_compete": ""
+  },
+  "screening": {
+    "age_18_plus": "Yes",
+    "background_check_ok": "Yes",
+    "drug_test_ok": "Yes",
+    "drivers_license": "Yes",
+    "reliable_transportation": "Yes",
+    "hybrid_days_max": 3,
+    "weekends_ok": "No",
+    "overtime_ok": "Yes",
+    "open_to_contract_to_hire": "Yes",
+    "previously_employed_answer": "No (verify per company)",
+    "relatives_at_company": "No (verify per company)",
+    "accommodations": "ask",
+    "remote_setup": "Yes",
+    "timezone_overlap": "US Central",
+    "current_salary_answer": "Prefer not to say",
+    "compensation_notes": "",
+    "cover_letter": "only_when_required",
+    "portfolio_url": "",
+    "writing_sample": "",
+    "references": "Available upon request",
+    "languages": [
+      {
+        "language": "English",
+        "level": "Native"
+      }
+    ],
+    "certifications": [],
+    "licenses": []
+  },
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "school": "Example State University",
+      "year": "2017"
+    }
+  ],
+  "education_summary": {
+    "highest_level": "Bachelor's",
+    "student_status": "graduated",
+    "graduation_date": "2017-05",
+    "gpa": "",
+    "gpa_scale": "4.0",
+    "share_gpa": "only_when_required",
+    "honors": ""
+  },
+  "eeo": {
+    "gender": "Decline to self-identify",
+    "hispanic_latino": "Decline to self-identify",
+    "race": "Decline to self-identify",
+    "veteran": "Decline to self-identify",
+    "veteran_detail": [],
+    "military_spouse": "Decline to self-identify",
+    "disability": "Decline to self-identify",
+    "sexual_orientation": "Decline to self-identify",
+    "transgender": "Decline to self-identify"
+  },
+  "tracker": {
+    "sheet_id": "TEST_SHEET_ID",
+    "tab": "Sheet1",
+    "gid": "0",
+    "chrome_profile_name": "Jane"
+  },
+  "inbox": {
+    "gmail_address": "jane.doe@example.com"
+  },
+  "search": {
+    "posting_window_days": 7,
+    "batch_size": 15,
+    "sources": [
+      "linkedin",
+      "indeed",
+      "ashby",
+      "greenhouse",
+      "lever",
+      "wellfound"
+    ],
+    "extra_portals": [
+      {
+        "name": "Austin Tech Jobs",
+        "url": "https://jobs.example.org",
+        "search_url": "https://jobs.example.org/search?q={query}",
+        "login_required": false,
+        "notes": "local board"
+      }
+    ],
+    "curated_linkedin_lists": false,
+    "curated_sources": []
+  },
+  "modules": {
+    "h1b": false,
+    "resume_tailoring": true,
+    "record_keeping": true
+  },
+  "h1b": {
+    "min_known_sponsor_share": 0.7,
+    "max_none_per_batch": 3
+  },
+  "c2c": {
+    "remote_only": true,
+    "days": 30,
+    "max_years_asked": 12,
+    "queries": {
+      "dice": [],
+      "dice_keyword": [],
+      "linkedin": []
+    }
+  },
+  "followups": {
+    "quiet_days": 10,
+    "max_followups": 2,
+    "stale_days": 60
+  },
+  "writing": {
+    "style_notes": "First person, plain text, concise and specific. No bold, headings or dashes in form fields."
+  }
+}

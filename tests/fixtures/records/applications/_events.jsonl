@@ -1,0 +1,4 @@
+{"date": "2026-10-20", "company": "Acme Robotics Inc.", "role": "Senior Full Stack Engineer", "event": "filled", "detail": "resume main; salary $185,000", "source": "apply-batch"}
+{"date": "2026-10-20", "company": "Acme Robotics Inc.", "role": "Senior Full Stack Engineer", "event": "submitted", "detail": "candidate submitted; tracker set to Applied", "source": "check-status"}
+{"date": "2026-11-02", "company": "Initech", "role": "Senior Software Engineer", "event": "interview", "detail": "recruiter screen done", "source": "email"}
+{"date": "2026-10-12", "company": "Initrode", "role": "Senior Backend Engineer", "event": "rejected", "detail": "Go-first team", "source": "email", "reason": "stack"}

@@ -1,0 +1,38 @@
+{
+ "captured_at": "2026-10-20T10:15:00",
+ "source": "apply-batch",
+ "form_url": "https://jobs.example.com/acme/101/apply",
+ "company": "Acme Robotics Inc.",
+ "job_title": "Senior Full Stack Engineer",
+ "resume_uploaded": "resumes/base/Jane_Doe_Resume.pdf",
+ "resume_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+ "resume_archive": "resumes/archive/Jane_Doe_Resume_2026-10-20_01234567.pdf",
+ "salary": "$185,000",
+ "files_attached": [
+  "Jane_Doe_Resume.pdf"
+ ],
+ "answers": [
+  {
+   "question": "Full name",
+   "answer": "Jane Doe"
+  },
+  {
+   "question": "Email",
+   "answer": "jane.doe@example.com"
+  },
+  {
+   "question": "Are you authorized to work in the US?",
+   "answer": "Yes"
+  },
+  {
+   "question": "Why Acme?",
+   "answer": "I have shipped React and Node.js services for operations teams.\nWarehouse robotics is the kind of problem I want next.",
+   "note": "drafted, candidate pastes"
+  }
+ ],
+ "left_for_candidate": [
+  "review the essay",
+  "click Submit"
+ ],
+ "caveat": "Fake fixture for tests."
+}

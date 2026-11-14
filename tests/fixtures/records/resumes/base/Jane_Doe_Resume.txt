@@ -1,0 +1,1 @@
+Fake resume for pin_resume tests. Jane Doe.

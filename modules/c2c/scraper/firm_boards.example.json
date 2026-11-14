@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to firm_boards.json (git-ignored) and replace the example entries with real staffing-firm boards. Use probe_boards.py to find sites a plain script can read. type wp_feed: url is a WordPress job RSS feed, searched with ?s=<query>. type jsonld_list: url is a search page with {q} for the query; job links containing link_pattern are opened and read from their schema.org JobPosting data. tier: vendor (usually accepts C2C) or big (mostly W2).",
+  "queries": ["python", "react", "full stack", "ai engineer"],
+  "boards": [
+    {"firm": "Example Staffing (feed)", "tier": "big", "type": "wp_feed", "url": "https://jobs.example-staffing.com/feed/"},
+    {"firm": "Example Vendor (list)", "tier": "vendor", "type": "jsonld_list", "url": "https://www.example-vendor.com/jobs/?search={q}", "link_pattern": "/jobs/"}
+  ]
+}

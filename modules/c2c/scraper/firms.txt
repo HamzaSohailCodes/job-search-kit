@@ -1,0 +1,61 @@
+# name | domain | tier (vendor = usually accepts C2C, big = mostly W2)
+Lorven Technologies | lorventech.com | vendor
+VDart | vdart.com | vendor
+Cyberobotix | cyberobotix.com | vendor
+Chabez Tech | chabeztech.com | vendor
+Intellisoft Technologies | intellisofttech.com | vendor
+STAFFXPERT | staffxpert.com | vendor
+Magicforce | magicforce.us | vendor
+Accion Labs | accionlabs.com | vendor
+SoftPath Technologies | softpath.net | vendor
+Info Way Solutions | infowaysolutions.com | vendor
+Sensiple | sensiple.com | vendor
+Codeforce 360 | codeforce360.com | vendor
+DivIHN Integration | divihn.com | vendor
+TechniPros | technipros.com | vendor
+Georgia IT | georgiait.com | vendor
+Saksoft | saksoft.com | vendor
+Russell Tobin | russelltobin.com | vendor
+Burgeon IT Services | burgeonits.com | vendor
+Talent Groups | talentgroups.com | vendor
+Diverse Lynx | diverselynx.com | vendor
+Mindlance | mindlance.com | vendor
+Pyramid Consulting | pyramidci.com | vendor
+Ampcus | ampcus.com | vendor
+Intelliswift | intelliswift.com | vendor
+Outcome Logix | outcomelogix.com | vendor
+Kellton | kellton.com | vendor
+Mastech Digital | mastechdigital.com | vendor
+Sysmind | sysmind.com | vendor
+Rangam | rangam.com | vendor
+Net2Source | net2source.com | vendor
+Infojini | infojiniconsulting.com | vendor
+Steneral Consulting | steneral.com | vendor
+Tanisha Systems | tanishasystems.com | vendor
+Ascendion | ascendion.com | vendor
+Amtex Systems | amtexsystems.com | vendor
+Revel IT | revelit.com | vendor
+DeWinter Group | dewintergroup.com | vendor
+Genesis10 | genesis10.com | vendor
+Matlen Silver | matlensilver.com | vendor
+Eliassen Group | eliassen.com | vendor
+Smart Caliber | smartcaliber.com | vendor
+Purple Drive | purpledrive.com | vendor
+TEKsystems | teksystems.com | big
+Robert Half | roberthalf.com | big
+Insight Global | insightglobal.com | big
+Kforce | kforce.com | big
+Apex Systems | apexsystems.com | big
+Randstad | randstadusa.com | big
+Motion Recruitment | motionrecruitment.com | big
+Yoh | yoh.com | big
+INSPYR Solutions | inspyrsolutions.com | big
+Brooksource | brooksource.com | big
+Jobot | jobot.com | big
+Collabera | collabera.com | big
+Akkodis | akkodis.com | big
+Experis | experis.com | big
+Beacon Hill | beaconhillstaffing.com | big
+Judge Group | judge.com | big
+US Tech Solutions | ustechsolutions.com | big
+Swoon | swoonstaffing.com | big
